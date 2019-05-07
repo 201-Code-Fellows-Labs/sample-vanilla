@@ -1,1 +1,1 @@
-This web-site is created as sample of some simple HTML, css & Vanilla JavaScript as an attemt to test out of 201 level at CodeFellows bootcamp.
+This is an example of simple HTML / CSS / JavaScript web-site created in attemt to test out of 201 level at CodeFellows bootcamp.
