@@ -151,3 +151,22 @@ color: green;
   height: 100px;
   width: 100px;
 }
+
+/* FOOTER STYLES */
+.footer {
+  background-color: #F8F3C4;
+  padding: 10vh 0 15vh;
+  text-align: center;
+  z-index: 30;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: #C4523A;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #000;
+}
