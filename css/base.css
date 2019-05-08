@@ -114,16 +114,18 @@ color: green;
 .header-nav {
   float: right;
 }
+.nav-links a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .header-nav > li {
   display: inline-block;
+  font-weight: bold;
   padding: 5.5vh 60px 0 0;
   margin-left: 1em;
   color: #000;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  
 }
 .header-nav a:hover,
 .header-nav a:active {
@@ -169,4 +171,12 @@ color: green;
 }
 .footer h3 span {
   color: #000;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #616F51;
 }
