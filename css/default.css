@@ -46,6 +46,12 @@ a img {
 }
 /* END RESET*/
 
+/* Global Styles */
+
+body {
+  font-family: helvetica, arial, sans;
+}
+
 a {
   color: #b942f4;
 }
@@ -69,4 +75,31 @@ width: 166px;
 }
 .bio-box p a {
 color: green;
+}
+
+/* .bio-box img {
+  width: 100%;
+} */
+.bio-box .social-link {
+  display: block;
+  margin: 2em 0 1em;
+}
+.bio-copy {
+  font-size: 1em;
+}
+
+
+/* HEADER STYLES */
+.header-nav {
+  float: right;
+}
+.header-nav > li {
+  display: inline-block;
+  padding: 5.5vh 60px 0 0;
+  margin-left: 1em;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }
