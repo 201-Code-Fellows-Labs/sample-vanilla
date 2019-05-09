@@ -119,16 +119,16 @@ color: #616F51;
   color: #000;
 }
 .header-logo {
-  background-color: #ccc;
   height: 100px;
   position: absolute;
   width: 100px;
-  left: -0px;
+  left: 0px;
+  top: 10px;
 }
 
 .header-logo > img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 /* FOOTER STYLES */
@@ -171,7 +171,7 @@ color: #616F51;
 }
 
 .content-title {
-  font-size: 5.75vw;
+  font-size: 3.75vw;
   text-transform: uppercase;
 }
 .content-copy {
@@ -181,12 +181,15 @@ color: #616F51;
 }
 
 .bio-title {
-  color: #F8F3C4;
+  color: #C4523A ;
   text-align: right;
   font-size: 1.4em;
   text-transform: uppercase;
 }
 
+  .bio-title span {
+  color: #000 ;
+}
 .social-links {
   padding: 1vh 0;
   float: right;
