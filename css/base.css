@@ -64,7 +64,12 @@ body {
   
 }
 
+p {
+  line-height: 1.5;
+  margin: 0.75em 0;
+}
 .content-container {
+  display: flex;
   flex-grow: 1;
   padding-top: 10vh;
   width: 100%;
@@ -214,4 +219,26 @@ color: #616F51;
 .social-icons {
   float:left;
   width:40px;
+}
+
+/* GALLERY STYLES */
+.col-three {
+  display: flex;
+  flex: 1;
+}
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1;
+}
+.col-three .col-aside {
+  flex: 0 1 20em;
 }
