@@ -57,7 +57,17 @@ html {
 body {
   font-family: helvetica, arial, sans;
   background-color:#CFD0A6;
- 
+  display: flex;
+  flex-direction: column;
+  font-family: helvetica, arial, sans;
+  min-height: 100vh;
+  
+}
+
+.content-container {
+  flex-grow: 1;
+  padding-top: 10vh;
+  width: 100%;
 }
 
 h3 ~ p {
