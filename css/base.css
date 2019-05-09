@@ -202,8 +202,12 @@ color: #616F51;
   font-size: 1.4em;
   text-transform: uppercase;
 }
-
-  .bio-title span {
+.biopic > img {
+  float:left;
+  width:200px;
+  margin: 1rem;
+}
+.bio-title span {
   color: #000 ;
 }
 .social-links {
