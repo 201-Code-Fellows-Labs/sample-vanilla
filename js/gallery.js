@@ -13,7 +13,11 @@ function activateGallery() {
             mainImage.setAttribute("src", newImageSrc);
              // update Alt
             let newImageAlt = thumbnail.dataset.title;
-            mainImage.setAttribute("alt", newImageSrc);
+            mainImage.setAttribute("alt", newImageAlt);
+            //change current indictor 
+            document.querySelector(".current").classList.remove("current");
+            thumbnail.parentNode.classList.add("current");
         });
     });
+   
 }

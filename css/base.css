@@ -276,6 +276,6 @@ text-align: center;
   opacity: 1;
 }
 .gallery-thumbs .current img {
-  box-shadow: 0 0 0 5px #C4523A;
+  box-shadow: 0 0 0 3px #C4523A;
   opacity: 1;
 }
