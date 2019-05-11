@@ -1,8 +1,19 @@
-let thumbnails = document.querySelector("#gallery-thumbs").
-                          querySelectorAll("img");
+function activateGallery() {
+    //select all the thumbnails
+    let thumbnails = document.querySelector("#gallery-thumbs").
+                            querySelectorAll("img");
+    //select main image
+    let mainImage = document.querySelector("#gallery-photo > img")
 
-thumbnails.forEach(function(thumbnail) {
-    thumbnail.addEventListener("click", function() {
-        // code to set clicked image as main image
+    //put event litner to each tumbnail
+    thumbnails.forEach(function(thumbnail) {
+        thumbnail.addEventListener("click", function() {
+            // set clicked image as main image
+            let newImageSrc = thumbnail.dataset.largeVersion;
+            mainImage.setAttribute("src", newImageSrc);
+             // update Alt
+            let newImageAlt = thumbnail.dataset.title;
+            mainImage.setAttribute("alt", newImageSrc);
+        });
     });
-});
+}
