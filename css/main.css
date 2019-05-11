@@ -79,7 +79,7 @@ h3 ~ p {
   font-size: 0.8em;
   font-style: italic;
   margin: 1em auto 0;
-  max-width: 70%;
+  max-width: 90%;
   text-align: center;
 }
 
@@ -226,6 +226,7 @@ color: #616F51;
 }
 
 /* GALLERY STYLES */
+
 .col-three {
   display: flex;
   flex: 1;
@@ -279,3 +280,31 @@ text-align: center;
   box-shadow: 0 0 0 3px #C4523A;
   opacity: 1;
 }
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem
+}
+.description {
+  text-align: left;
+  font-size: 0.8rem;
+}
+.gallery-info {
+  font-size: 1rem;
+  
+}
+.author p {
+  font-style: normal;
+}
+
+.author span {
+  font-weight: bold;
+  color:#C4523A ;
+}
+
+ .author img{
+  position: relative;
+  left: 5px;
+  top: 5px;
+ } 
