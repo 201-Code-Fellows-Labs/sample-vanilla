@@ -193,13 +193,17 @@ color: #616F51;
 
 .content-title2 {
   color:#000;
-  font-size: 1vw;
+  font-size: 1.5vw;
   text-transform: uppercase;
   margin: 1.2rem;
 }
 .content-copy {
   padding: 1vh 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  text-align:justify;
+}
+.content-list{
+  font-size: 0.9rem;
   text-align:justify;
 }
 
