@@ -106,7 +106,7 @@ color: #616F51;
 .header-nav {
   float: right;
 }
-.nav-links a {
+.header-nav a {
   font-size: 0.8rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -119,17 +119,19 @@ color: #616F51;
   margin-left: 1em;
   color: #000;
 }
-.header-nav a:hover,
-.header-nav a:active {
+.header-nav a:hover,.header-nav a:active {
+  color:	#C4523A;
+}
+.active{
   color:	#C4523A;
 }
 .header-logo:hover,
 .header-logo:active {
   opacity: 0.5;
 }
-.header-nav > li:first-child a {
+/* .header-nav > li:first-child a {
   color:	#C4523A;
-}
+} */
 .header-nav > li:first-child a:hover {
   color: #000;
 }
