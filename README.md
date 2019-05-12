@@ -2,6 +2,12 @@
 ## Study project
 This is an example of simple HTML / CSS / JavaScript web-site created in attemt to test out of 201 level at CodeFellows bootcamp.
 
-Please check it out here: https://nadyailinskiy.github.io/gallery/ 
+Please check it out here: https://nadyailinskiy.github.io/portfolio/ 
 
-## ***Work in progress*** 
+## Here's what I've used for this site development:
+- HTML
+- Jekyll Liquid for templating
+- CSS - the majotiry of challenges I had was related to layout and css
+- JavaScript was used to create dynamic photo gallery in the portfolio section with help of HTML data-* Attributes. 
+- Also active top menu link highlighted with JS function
+
