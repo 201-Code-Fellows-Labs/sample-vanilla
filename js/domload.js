@@ -3,4 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     welcome();
     activateNavLinks();
     activateGallery();
+    hideForm();
+    reset();
   });
