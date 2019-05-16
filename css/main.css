@@ -60,8 +60,12 @@ body {
   display: flex;
   flex-direction: column;
   font-family: helvetica, arial, sans;
-  min-height: 100vh;
-  
+  min-height: 100vh;  
+}
+.greetings span {
+  color:	#C4523A;
+  font-style: italic;
+  font-size: 1.2em;
 }
 
 p {
@@ -111,7 +115,18 @@ color: #616F51;
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.greetings{
+  height: 100px;
+  position: absolute;
+  width: 500px;
+  left: 100px;
+  top: 20px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #616F51;
+}
 .header-nav > li {
   display: inline-block;
   font-weight: bold;
@@ -351,3 +366,4 @@ input[type=submit]:hover {
   background-color: #F8F3C4;
   padding: 20px;
 }
+

@@ -31,7 +31,7 @@ function greetings(){
     let greetings = document.querySelector("#greetings");
     console.log(storedName);
     if (storedName) {
-        greetings.innerHTML = "Welcome " + storedName;
+        greetings.innerHTML = "Welcome to my gallery " + "<span>"+ storedName +" </span>!";
       //  event.preventDefault();   
         } 
     else {
