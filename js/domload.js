@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    greetings();
+   // greetings();
     welcome();
     activateNavLinks();
     activateGallery();

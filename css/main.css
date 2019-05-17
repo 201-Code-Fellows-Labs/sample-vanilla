@@ -371,7 +371,11 @@ input[type=button] {
   text-transform: uppercase;
   font-weight: bold;
 }
+.name_validation{
+  float:right;
+  margin: 5px 25px;
 
+}
 input[type=button]:hover {
   background-color: #C4523A;
 }

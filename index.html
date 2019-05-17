@@ -24,16 +24,23 @@ layout: default
 
                     <i><span>What is your name?</span></i>
                     <form id="name_form"> 
-                        <input id="guest_name" type="text" placeholder="Name" value=""/><br><br>
-
+                        <input id="guest_name" type="text" placeholder="Name" value="" required/>
+                        <div class="name_validation">
+                                <p id="validation"></p>
+                        </div>
+                        <br><br>
                         <i><span>What is your first choice here?</span></i>
                         
-                            <br><input type="radio" name="pref" value="music"> Mark Knopfler<br>
+                            <br><input type="radio" name="pref" value="music" checked> Mark Knopfler<br>
                             <input type="radio" name="pref" value="sport"> Muhammad Ali <br>
                             <input id="submit_btn"  type="button" value="submit" /> 
                         </form> 
                  </div> 
-
+                
+        
+                 <div class="name_validation">
+                 <p id="validation"></p>
+                </div>
                 <div id = "resetDiv"> 
                         <!-- <form > 
                                 <input id="reset_btn"  type="button" value="Get me there" /> 
