@@ -8,6 +8,5 @@ Please check it out here: https://nadyailinskiy.github.io/portfolio/
 - HTML
 - Jekyll Liquid for templating
 - CSS - the majotiry of challenges I had was related to layout and css
-- JavaScript was used to create dynamic photo gallery in the portfolio section with help of HTML data-* Attributes. 
-- Also active top menu link highlighted with JS function
-
+- JavaScript was used to create interactive interface on Home page and Dynamic photo galleries
+- Many thanks to https://icons8.com/ for cute social-links icons.
