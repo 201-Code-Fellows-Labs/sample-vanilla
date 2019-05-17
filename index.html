@@ -21,16 +21,17 @@ layout: default
 
                 <div id = "formDiv"> 
                     <p>There're multiple galleries here, so let us know you a little bit better, so we can offer you more customized experience! </p>
-
-                    <i><span>What is your name?</span></i>
+                    <div class="form_lable">
+                    What is your name?
+                    </div>
                     <form id="name_form"> 
                         <input id="guest_name" type="text" placeholder="Name" value="" required/>
                         <div class="name_validation">
                                 <p id="validation"></p>
                         </div>
-                        <br><br>
-                        <i><span>What is your first choice here?</span></i>
-                        
+                        <div class="form_lable">
+                           What is your first choice here?
+                        </div>
                             <br><input type="radio" name="pref" value="music" checked> Mark Knopfler<br>
                             <input type="radio" name="pref" value="sport"> Muhammad Ali <br>
                             <input id="submit_btn"  type="button" value="submit" /> 

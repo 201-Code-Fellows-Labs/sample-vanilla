@@ -372,9 +372,15 @@ input[type=button] {
   font-weight: bold;
 }
 .name_validation{
-  float:right;
-  margin: 5px 25px;
-
+  float:bottom;
+  margin: 5px 15px;
+  color:red;
+  font-size: 0.8rem;
+}
+.form_lable{
+  text-align: left;
+  font-style: italic;
+  color: #C4523A;
 }
 input[type=button]:hover {
   background-color: #C4523A;

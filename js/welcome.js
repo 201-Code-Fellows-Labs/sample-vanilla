@@ -11,7 +11,7 @@ function welcome() {
         // storing input from input-form 
 
                 if (!guestName.value){
-                    document.querySelector("#validation").innerHTML = "<span><i> Please, enter your name</i></span>";
+                    document.querySelector("#validation").innerHTML = " Please, enter your name";
                     return false;
                 } 
                     localStorage.setItem('guest_name', guestName.value);
