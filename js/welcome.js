@@ -4,16 +4,16 @@ function welcome() {
     let submitButton = document.querySelector("#submit_btn");
     let dynamic = document.querySelector("#dynamic");
     
-    //if dynamic div exists on the page - to prevent js errors on other pages
-    if(dynamic){ 
+    
+    if(dynamic){ //check if dynamic div exists on the page - to prevent js errors on other pages
     //listen for click event on submit button
     submitButton.addEventListener ("click", function() {
-        // storing input from input-form 
-
+        
+                //validation check 
                 if (!guestName.value){         
                     document.querySelector("#validation").innerHTML = " Please, enter your name";
                     return false;
-                } 
+                } // storing input from input-form 
                     let pref = document.querySelector("input[name=pref]:checked");
                     localStorage.setItem('guest_name', guestName.value);
                     localStorage.setItem("guest_pref", pref.value);
@@ -66,10 +66,10 @@ function greetings(){
     let greetings = document.querySelector("#greetings");
     let greetings2 = document.querySelector("#greetings2");
         
-        greetings.innerHTML = "Welcome to our gallery " + "<span>"+ storedName +" </span>!";  
+        greetings.innerHTML = "Welcome to <span>" +  storedPref + "</span> gallery, " + "<span>"+ storedName +" </span>!";  
         
-        if(dynamic){
-            greetings2.innerHTML = "Glad to see you " + "<span>"+ storedName +" </span>!<br> I bet you'll enjoy our <span>" +
+        if(dynamic){  //check if dynamic div exists on the page
+            greetings2.innerHTML = "Glad to see you " + "<span>"+ storedName +" </span>!<br> I bet you'll enjoy <span>" +
             storedPref + "</span> gallery!";  
             console.log(storedName);
             console.log(storedPref);
@@ -88,7 +88,7 @@ function hideDiv(){
     if (!storedName) {
         greetings.style.display="none";
     }    
-        if(dynamic){    //if dynamic div exist on the page          
+        if(dynamic){    //check if dynamic div exists on the page          
             if (!storedName) {
                 form.style.display = "inline-block";
                 welcomeBackDiv.style.display="none";
@@ -107,8 +107,8 @@ function hideDiv(){
 function reset() {
     let dynamic = document.querySelector("#dynamic");
     let resetButton = document.querySelector("#reset_btn");
-  //if dynamic div exists on the page
-    if(dynamic){ 
+  
+    if(dynamic){ //check if dynamic div exists on the page
         //listen for click event on reset button
         resetButton.addEventListener ("click", function() {
             localStorage.clear();
