@@ -16,24 +16,32 @@ layout: default
           <div id="dynamic" class="form"> <!-- dynamic container -->
 
                  <div id="welcomeBackDiv" class="welcome_back">
-                        Glad to see you!
+                      <p id="greetings2"> </p>
                  </div>
 
                 <div id = "formDiv"> 
-                    <p>There're multiple galleries here, so let us know you a little bit better, so we can offer you more customized expirience! </p>
+                    <p>There're multiple galleries here, so let us know you a little bit better, so we can offer you more customized experience! </p>
 
-                    <i>What is your name?</i>
+                    <i><span>What is your name?</span></i>
                     <form id="name_form"> 
-                        <input id="guest_name" type="text" placeholder="Name" value=""/>
-                        <input id="submit_btn"  type="button" value="submit" /> 
-                    </form> 
-                </div> 
+                        <input id="guest_name" type="text" placeholder="Name" value=""/><br><br>
+
+                        <i><span>What is your first choice here?</span></i>
+                        
+                            <br><input type="radio" name="pref" value="music"> Mark Knopfler<br>
+                            <input type="radio" name="pref" value="sport"> Muhammad Ali <br>
+                            <input id="submit_btn"  type="button" value="submit" /> 
+                        </form> 
+                 </div> 
 
                 <div id = "resetDiv"> 
-                        
+                        <!-- <form > 
+                                <input id="reset_btn"  type="button" value="Get me there" /> 
+                        </form>  -->
                         <form> 
                             <input id="reset_btn"  type="button" value="Reset my settings" /> 
                         </form> 
+                       
                  </div> 
            </div>                      
     </div>

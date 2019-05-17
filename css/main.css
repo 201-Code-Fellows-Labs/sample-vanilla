@@ -348,6 +348,15 @@ text-align: center;
   box-sizing: border-box;
 }
 
+input[type=radio] {
+  display: flex;
+  margin: 3px 20px;
+  display: inline-block;
+}
+.pref_form {
+  margin: 8px 0;
+}
+
 input[type=button] {
   width: 200px;
   background-color: #616F51;
