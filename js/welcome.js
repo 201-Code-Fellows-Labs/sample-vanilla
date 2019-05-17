@@ -24,9 +24,9 @@ function welcome() {
 }
 
 function hideLinks(){
-    let musicNavLink = document.querySelector("#to_music_gallery");
+    let musicNavLink = document.querySelectorAll("#to_music_gallery");
     console.log("link = ",musicNavLink );
-    let sportNavLink = document.querySelector("#to_sport_gallery");
+    let sportNavLink = document.querySelectorAll("#to_sport_gallery");
     let storedName =  localStorage.getItem("guest_name");
     let storedPref =  localStorage.getItem("guest_pref");
     console.log(storedPref);
@@ -36,11 +36,19 @@ function hideLinks(){
         sportNavLink.style.display="none";
     }   else {
             if (storedPref == "music"){
-                musicNavLink.style.display="inline-block";
-                sportNavLink.style.display="none";
+                musicNavLink.forEach(function(element) {
+                element.style.display="inline-block";
+                });
+                sportNavLink.forEach(function(element) {
+                    element.style.display="none";
+                    });
             } else {
-                musicNavLink.style.display="none";
-                sportNavLink.style.display="inline-block";
+                musicNavLink.forEach(function(element) {
+                    element.style.display="none";
+                    });
+                sportNavLink.forEach(function(element) {
+                    element.style.display="inline-block";
+                    });
             }
     }
     }
@@ -48,16 +56,20 @@ function hideLinks(){
 
 
 function greetings(){
+    let dynamic = document.querySelector("#dynamic");
     let storedName =  localStorage.getItem("guest_name");
     let storedPref =  localStorage.getItem("guest_pref");
     let greetings = document.querySelector("#greetings");
     let greetings2 = document.querySelector("#greetings2");
         
         greetings.innerHTML = "Welcome to our gallery " + "<span>"+ storedName +" </span>!";  
-        greetings2.innerHTML = "Glad to see you " + "<span>"+ storedName +" </span>!<br> I bet you'll enjoy our <span>" +
-        storedPref + "</span> gallery!";  
-        console.log(storedName);
-        console.log(storedPref);
+        
+        if(dynamic){
+            greetings2.innerHTML = "Glad to see you " + "<span>"+ storedName +" </span>!<br> I bet you'll enjoy our <span>" +
+            storedPref + "</span> gallery!";  
+            console.log(storedName);
+            console.log(storedPref);
+        }
   
 }
 
