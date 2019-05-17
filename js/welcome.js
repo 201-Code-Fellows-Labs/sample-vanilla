@@ -3,17 +3,18 @@ function welcome() {
     let guestName = document.querySelector("#guest_name");
     let submitButton = document.querySelector("#submit_btn");
     let dynamic = document.querySelector("#dynamic");
-    let pref = document.querySelector("input[name=pref]:checked");
+    
     //if dynamic div exists on the page - to prevent js errors on other pages
     if(dynamic){ 
     //listen for click event on submit button
     submitButton.addEventListener ("click", function() {
         // storing input from input-form 
 
-                if (!guestName.value){
+                if (!guestName.value){         
                     document.querySelector("#validation").innerHTML = " Please, enter your name";
                     return false;
                 } 
+                    let pref = document.querySelector("input[name=pref]:checked");
                     localStorage.setItem('guest_name', guestName.value);
                     localStorage.setItem("guest_pref", pref.value);
                     document.location.reload();                        
@@ -21,6 +22,30 @@ function welcome() {
         greetings();   
     }
 }
+
+function hideLinks(){
+    let musicNavLink = document.querySelector("#to_music_gallery");
+    console.log("link = ",musicNavLink );
+    let sportNavLink = document.querySelector("#to_sport_gallery");
+    let storedName =  localStorage.getItem("guest_name");
+    let storedPref =  localStorage.getItem("guest_pref");
+    console.log(storedPref);
+
+    if (!storedName) {
+        musicNavLink.style.display="none";
+        sportNavLink.style.display="none";
+    }   else {
+            if (storedPref == "music"){
+                musicNavLink.style.display="inline-block";
+                sportNavLink.style.display="none";
+            } else {
+                musicNavLink.style.display="none";
+                sportNavLink.style.display="inline-block";
+            }
+    }
+    }
+
+
 
 function greetings(){
     let storedName =  localStorage.getItem("guest_name");

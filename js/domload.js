@@ -4,5 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
     activateNavLinks();
     activateGallery();
     reset();
-    hideDiv()
+    hideDiv();
+    hideLinks();
   });
