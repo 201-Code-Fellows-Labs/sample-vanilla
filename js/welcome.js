@@ -32,8 +32,12 @@ function hideLinks(){
     console.log(storedPref);
 
     if (!storedName) {
-        musicNavLink.style.display="none";
-        sportNavLink.style.display="none";
+        musicNavLink.forEach(function(element) {
+            element.style.display="none";
+            });
+        sportNavLink.forEach(function(element) {
+            element.style.display="none";
+            });
     }   else {
             if (storedPref == "music"){
                 musicNavLink.forEach(function(element) {
